@@ -40,5 +40,6 @@ The administrator section should be protected using sessions (PHP). All user pas
 - The following techniques and technologies should be used within the project: HTML, CSS, JavaScript, AJAX or Fetch API, JSON, Bootstrap, PHP, and MySQL.
 - The PHP code that uses AJAX or Fetch API must manipulate data from the database. Recommended usage of AJAX or Fetch API techniques: data validation, data retrieval from the database, registration, and validation checks.
 - Validations should be implemented on both the client and server sides for data validation pages.
-- The project should be deployed on the school's web server. Each team will receive their access parameters via email.
 - The use of other technologies, libraries, and APIs is optional.
+
+- 
