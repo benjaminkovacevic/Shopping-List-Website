@@ -41,5 +41,3 @@ The administrator section should be protected using sessions (PHP). All user pas
 - The PHP code that uses AJAX or Fetch API must manipulate data from the database. Recommended usage of AJAX or Fetch API techniques: data validation, data retrieval from the database, registration, and validation checks.
 - Validations should be implemented on both the client and server sides for data validation pages.
 - The use of other technologies, libraries, and APIs is optional.
-
-- 
