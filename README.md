@@ -1,74 +1,37 @@
-# Shopping-List-Website
-A shopping list is a list of items that you plan to buy during a shopping trip. It helps you stay organized and ensures you don't forget anything you need.
+Shopping List Web Application
+This project aims to create a web application that serves as an electronic shopping list. The application includes three levels of access: guest, registered/user, and administrator.
 
-Opis projekta:
-Cilj projekta je da se kreira web aplikacija-sajt za vođenje elektronske liste za kupovinu.
-Aplikacija razlikuje tri nivoa pristupa: gost, registrovan/prijavljen korisnik i administrator.
-Gost
-•
-•
-može da pogleda ponuđene informacije na sajtu
-može da izvrši registraciju na sajtu
-Registrovan/prijavljen korisnik
-•
-•
-•
-•
-•
-•
-može da pregleda ponuđene informacije na sajtu
-može da promeni svoje profilne podatke (lozinka, ime, prezime, broj telefona, adresa)
-može da kreira listu za kupovinu za jedan ili više dana
-može da pregledam menja i briše svoje liste za kupovinu (omogućiti prikaz na osnovu
-statusa liste – created i finished)
-može da pregleda statistiku šta je najviše kupovao u nekom vremenskom periodu
-može da zahteva promenu lozinke (zaboravljena lozinka)
+Guest
+Can view the provided information on the website.
+Can register on the website.
+Registered/User
+Can view the provided information on the website.
+Can update their profile information (password, name, surname, phone number, address).
+Can create a shopping list for one or more days.
+Can view, edit, and delete their shopping lists (with a display based on the list status - created and finished).
+Can view statistics on their most frequently purchased items within a specified time period.
+Can request a password change if forgotten.
 Administrator
-•
-•
-može da pregleda sve korisničke naloge
-može da zabravni/odobri prijavu korisnika na sistem
-Registraciju korisnika mora biti urađena na bezbedan način i obaveznim slanjem aktivacionog
-linka putem e-maila. Slanje linka koristiti i kod zahteva za promenu lozinke. Ne sme se dozvoliti
-registracija korisničkih naloga sa istom e-mail adresom. E-mail adresa mora biti jedinstvena i
-ona predstavlja korisničko ime.
-Korisnik kreira svoju listu za kupovinu unešenjem sledećih podataka: naziv liste, dan za
-kupovinu, sadržaj liste (svaka stavka se navodi posebno) i opciono opis liste. U opisu može da
-navede neke dodatne informacije koje ćemu koristiti prilikom kupovine. Datum i vreme unosa
-liste treba da bude automatski dodato prilikom kreiranja liste. Svaka lista podrazumevano ima
-status kreirana (created). Status se menja nakon završetka kupovine.
-Kada korisnik odlazi u kupovinu može da otvori listu i da dobije spisak svih stavki te liste.
-Pored svake stavke treba da stoji polje (checkbox) preko kojega može da označi da li je već tu
-stavku stavio u korpu. Kada završi kupovinu pritiskom na taster Završi kupovinu završava
-kupovinu. Ova lista menja svoj status na završena (finished).
-Korisnik preko opcije statistika da odabirom vremenskog perioda pogleda koje je stavke najviše
-kupovao odnosno dodavo u liste za kupovinu.
-Administratorski deo zaštiti upotrebom sesija (PHP). Sve korisničke lozinke „hešovati“ bcrypt
-algoritmom.
-1Kreirati bazu podataka pod imenom shopping i unutar nje tabele koje će zadovoljiti sve
-funkcionalnosti projekta.
-Zahtevi i smernice
-•Pored navedenih obaveznih funkcionalnosti studenti mogu dodati i neku svoju
-funkcionalnost koja će po njihovom mišljenju unaprediti projekat.
-•Upotreba spoljašnjeg fajla sa JavaScript kodom je obavezna. Programski kod
-(promenljive, funkcije, objekte…) pisati na engleskom jeziku, koristiti komentare u
-kodu, držati se uputstva koje je dato u posebnom fajlu coding_style_guide_sr.pdf
-•Obavezna upotreba spoljašnjeg fajla sa CSS kodom.
-•Pristupne parametre za povezivanje sa MySQL serverom definisati u spoljašnjem fajlu
-db_config.php. Za rad sa MySQL bazom koristiti PDO ekstenziju unutar PHP jezika.
-Deo PHP programskog koda mora biti objektno orijentisan.
-•Na jednom projektu zajedno mogu da rade dva studenta. Svaki tim mora da ima svoje
-ime.
-•Projekat treba da bude multiplatformski (Responsive) i da bude prilagođen računarima
-i mobilnim uređajima.
-•U okviru projekta obavezno treba koristiti sledeće tehnike i tehnologije: HTML, CSS,
-JavaScript, AJAX ili Fetch API, JSON, Bootstrap, PHP i MySQL.
-•Programski deo koji koristi AJAX ili Fetch API tehniku mora da manipuliše sa
-podacima iz baze podataka. Preporuka za korišćenje AJAX ili Fetch API tehnika:
-provera validnosti podataka, nabavljanje podataka iz baze podataka, registracija i
-provere kod registracije.
-•Na stranicama gde se radi validacija podataka obavezno uraditi validaciju na klijentskoj
-i serverskoj strani.
-•Projekat je potrebno postaviti na školski web server. Svaki tim će dobiti svoje pristupne
-parametre putem e-maila.
-•Upotreba ostalih tehnologija, biblioteka i API-a je opciona.
+Can view all user accounts.
+Can approve/reject user registration requests.
+User registration must be done securely by sending an activation link via email. The same email address cannot be used to register multiple accounts. Each email address must be unique and serves as the username.
+
+To create a shopping list, the user enters the following details: list name, shopping day, list items (each item specified separately), and an optional description. The date and time of list creation should be automatically added. Each list is initially set to the "created" status and changes to "finished" after the shopping is completed.
+
+When a user goes shopping, they can open the list and get a checklist of all the items. Each item should have a checkbox to mark whether it has been added to the cart. Pressing the "Finish Shopping" button will update the list status to "finished".
+
+The user can access the "Statistics" option to select a time period and view the most frequently purchased or added items to their shopping lists.
+
+The administrator section should be protected using sessions (PHP). All user passwords should be hashed using the bcrypt algorithm.
+
+Requirements and Guidelines
+In addition to the mandatory functionalities, students can add their own features to enhance the project.
+The use of an external JavaScript file is mandatory. The program code (variables, functions, objects, etc.) should be written in English, with comments in the code. Follow the instructions given in the coding_style_guide_sr.pdf file.
+The use of an external CSS file is mandatory.
+Connection parameters for the MySQL server should be defined in the external file db_config.php. Use the PDO extension for working with MySQL within the PHP language. A part of the PHP code must be object-oriented.
+The project should be multiplatform (responsive) and adaptable to both computers and mobile devices.
+The following techniques and technologies should be used within the project: HTML, CSS, JavaScript, AJAX or Fetch API, JSON, Bootstrap, PHP, and MySQL.
+The PHP code that uses AJAX or Fetch API must manipulate data from the database. Recommended usage of AJAX or Fetch API techniques: data validation, data retrieval from the database, registration, and validation checks.
+Validations should be implemented on both the client and server sides for data validation pages.
+The project should be deployed on the school's web server. Each team will receive their access parameters via email.
+The use of other technologies, libraries, and APIs is optional.
