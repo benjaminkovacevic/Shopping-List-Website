@@ -36,7 +36,6 @@ The administrator section should be protected using sessions (PHP). All user pas
 - The use of an external JavaScript file is mandatory. The program code (variables, functions, objects, etc.) should be written in English, with comments in the code. Follow the instructions given in the coding_style_guide_sr.pdf file.
 - The use of an external CSS file is mandatory.
 - Connection parameters for the MySQL server should be defined in the external file db_config.php. Use the PDO extension for working with MySQL within the PHP language. A part of the PHP code must be object-oriented.
-- Two students can work together on one project. Each team must have its own name.
 - The project should be multiplatform (responsive) and adaptable to both computers and mobile devices.
 - The following techniques and technologies should be used within the project: HTML, CSS, JavaScript, AJAX or Fetch API, JSON, Bootstrap, PHP, and MySQL.
 - The PHP code that uses AJAX or Fetch API must manipulate data from the database. Recommended usage of AJAX or Fetch API techniques: data validation, data retrieval from the database, registration, and validation checks.
