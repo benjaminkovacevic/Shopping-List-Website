@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  height: 100vh; /* Set sidebar height to 100% viewport height */
+}
+
+.sidebar .nav-link {
+  color: #fff;
+}
